@@ -8,7 +8,7 @@ TempTrack is a sleek and responsive web-based weather application that allows us
 
 ## 🌐 Live Demo
 
-> (Add your live demo link here, e.g., `https://your-username.github.io/temptrack`)
+> (Add your live demo link here, e.g., `[https://temperaturetracker.netlify.app/]`)
 
 ---
 
