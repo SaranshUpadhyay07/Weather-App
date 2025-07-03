@@ -1,0 +1,127 @@
+html,body{
+     margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000; /* optional, for contrast */
+    overflow-x: hidden; 
+    
+}
+.big-container{
+    background: linear-gradient(to bottom, #081216, #303030, #474848) !important;
+    width: 100vw; /* <-- Fix: full viewport width */
+    min-height: 100vh; /* optional: ensure it covers height too */
+    padding: 0 !important;
+    margin: 0;
+}
+.full-width-banner {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('banner.jpg');
+  background-size: cover;
+  background-position: center top ;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+  padding: 70px 0px; /* Adjust height of jumbotron */
+  color: rgb(228, 228, 228);
+  text-align: left;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#citySelected{
+    border:2px aliceblue solid !important;
+    width: 370px;
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 2px 4px 12px rgba(238, 237, 237, 0.6) !important;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.25);
+  cursor:pointer;
+}
+
+.footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    color:aliceblue;
+    text-align: center;
+    padding:3px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.footer div{
+    padding:0.9rem;
+    font-size:1rem;
+}
+@media (min-width:1300px){
+    .card{
+        width:15rem !important;
+    }
+    .weather-card{
+        margin-left:8% !important;
+    }
+}
+
+@media (max-width:1280px){
+    .weather-card{
+        margin-left:7% !important;
+    }
+}
+@media (max-width:1024px){
+    .weather-card{
+        margin-left:4% !important;
+    }
+}
+@media (max-width:920px){
+    .full-width-banner {
+        padding: 20px 0 !important;
+    }
+    .card{
+        width:10rem !important;
+    }
+    .weather-card{
+        margin-left:8.5% !important;
+    }
+}
+@media (max-width:900px){
+    .full-width-banner {
+        padding: 20px 0 !important;
+    }
+    .card{
+        width:10rem !important;
+    }
+    .weather-card{
+        margin-left:5.5% !important;
+    }
+}
+@media (max-width:768px){
+    .weather-card{
+        margin-left:2.5vw !important;
+    }
+}
+@media(max-width:600px){
+    .weather-card{
+        margin-left:5.5vw !important;
+    }
+}
+@media (max-width:480px){
+    .weather-card{
+        margin-left:2% !important;
+    }
+}
+@media (max-width:399px){
+    .weather-card{
+        margin-left:0.5% !important;
+    }
+}
+@media (max-width:349px){
+    .weather-card{
+        margin-left:-8px !important;
+    }
+}

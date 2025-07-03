@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body class="">
+    <div class="big-container">
+            <div class="jumbotron jumbotron-fluid full-width-banner">
+            <div class="container">
+            <h1 class="display-3 pt-4 fw-normal">TempTrack</h1>
+        </div>
+        </div>
+        <div class="mb-2">
+            <div class="container mt-5 text-center ">
+                <p class="text-light display-6">Select a citiy </p>
+            </div>
+            <div class="container input-group mb-3 mt-lg-3">
+                <select name="citySelected" id="citySelected" class="btn btn-outline-secondary">
+                    <option disabled="" selected="" value=""> -- select a city -- </option>
+                    <option value="{&quot;lat&quot;:&quot;52.367&quot;,&quot;lon&quot;:&quot;4.904&quot;}">Amsterdam, Netherlands</option>
+                    <option value="{&quot;lat&quot;:&quot;39.933&quot;,&quot;lon&quot;:&quot;32.859&quot;}">Ankara, Turkey</option>
+                    <option value="{&quot;lat&quot;:&quot;56.134&quot;,&quot;lon&quot;:&quot;12.945&quot;}">Åstorp, Sweden</option>
+                    <option value="{&quot;lat&quot;:&quot;37.983&quot;,&quot;lon&quot;:&quot;23.727&quot;}">Athens, Greece</option>
+                    <option value="{&quot;lat&quot;:&quot;54.597&quot;,&quot;lon&quot;:&quot;-5.930&quot;}">Belfast, Northern Ireland, UK</option>
+                    <option value="{&quot;lat&quot;:&quot;41.387&quot;,&quot;lon&quot;:&quot;2.168&quot;}">Barcelona, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;52.520&quot;,&quot;lon&quot;:&quot;13.405&quot;}">Berlin, Germany</option>
+                    <option value="{&quot;lat&quot;:&quot;46.948&quot;,&quot;lon&quot;:&quot;7.447&quot;}">Bern, Switzerland</option>
+                    <option value="{&quot;lat&quot;:&quot;43.263&quot;,&quot;lon&quot;:&quot;-2.935&quot;}">Bilbao, Basque Country, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;50.847&quot;,&quot;lon&quot;:&quot;4.357&quot;}">Brussels, Belgium</option>
+                    <option value="{&quot;lat&quot;:&quot;47.497&quot;,&quot;lon&quot;:&quot;19.040&quot;}">Bucharest, Romania</option>
+                    <option value="{&quot;lat&quot;:&quot;59.329&quot;,&quot;lon&quot;:&quot;18.068&quot;}">Budapest, Hungary</option>
+                    <option value="{&quot;lat&quot;:&quot;51.483&quot;,&quot;lon&quot;:&quot;-3.168&quot;}">Cardiff, Wales, UK</option>
+                    <option value="{&quot;lat&quot;:&quot;50.937&quot;,&quot;lon&quot;:&quot;6.96&quot;}">Cologne, Germany</option>
+                    <option value="{&quot;lat&quot;:&quot;55.676&quot;,&quot;lon&quot;:&quot;12.568&quot;}">Copenhagen, Denmark</option>
+                    <option value="{&quot;lat&quot;:&quot;51.898&quot;,&quot;lon&quot;:&quot;-8.475&quot;}">Cork, Ireland</option>
+                    <option value="{&quot;lat&quot;:&quot;53.349&quot;,&quot;lon&quot;:&quot;-6.260&quot;}">Dublin, Ireland</option>
+                    <option value="{&quot;lat&quot;:&quot;55.953&quot;,&quot;lon&quot;:&quot;-3.188&quot;}">Edinburgh, Scotland, UK</option>
+                    <option value="{&quot;lat&quot;:&quot;43.7696&quot;,&quot;lon&quot;:&quot;11.255&quot;}">Florence, Italy</option>
+                    <option value="{&quot;lat&quot;:&quot;50.110&quot;,&quot;lon&quot;:&quot;8.682&quot;}">Frankfurt, Germany</option>        
+                    <option value="{&quot;lat&quot;:&quot;43.254&quot;,&quot;lon&quot;:&quot;6.637&quot;}">French Riviera, France</option>
+                    <option value="{&quot;lat&quot;:&quot;32.650&quot;,&quot;lon&quot;:&quot;-16.908&quot;}">Funchal, Madeira, Portugual</option>
+                    <option value="{&quot;lat&quot;:&quot;36.140&quot;,&quot;lon&quot;:&quot;-5.353&quot;}">Gibraltar, British Territory</option>   
+                    <option value="{&quot;lat&quot;:&quot;57.708&quot;,&quot;lon&quot;:&quot;11.974&quot;}">Gothenburg, Sweden</option>     
+                    <option value="{&quot;lat&quot;:&quot;53.548&quot;,&quot;lon&quot;:&quot;9.987&quot;}">Hamburg, Germany</option>
+                    <option value="{&quot;lat&quot;:&quot;60.169&quot;,&quot;lon&quot;:&quot;24.938&quot;}">Helsinki, Finland</option>
+                    <option value="{&quot;lat&quot;:&quot;39.020&quot;,&quot;lon&quot;:&quot;1.482&quot;}">Ibiza, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;50.450&quot;,&quot;lon&quot;:&quot;30.523&quot;}">Kyiv, Ukraine</option>
+                    <option value="{&quot;lat&quot;:&quot;61.115&quot;,&quot;lon&quot;:&quot;10.466&quot;}">Lillehammer, Norway</option>
+                    <option value="{&quot;lat&quot;:&quot;38.722&quot;,&quot;lon&quot;:&quot;-9.139&quot;}">Lisbon, Portugual</option>
+                    <option value="{&quot;lat&quot;:&quot;51.507&quot;,&quot;lon&quot;:&quot;-0.127&quot;}">London, England, UK</option>        
+                    <option value="{&quot;lat&quot;:&quot;40.416&quot;,&quot;lon&quot;:&quot;-3.703&quot;}">Madrid, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;39.695&quot;,&quot;lon&quot;:&quot;3.017&quot;}">Mallorca, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;53.480&quot;,&quot;lon&quot;:&quot;-2.242&quot;}">Manchester, England, UK</option>        
+                    <option value="{&quot;lat&quot;:&quot;43.296&quot;,&quot;lon&quot;:&quot;5.369&quot;}">Marseille, France</option>
+                    <option value="{&quot;lat&quot;:&quot;27.760&quot;,&quot;lon&quot;:&quot;-15.586&quot;}">Maspalomas, Gran Canaria, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;45.464&quot;,&quot;lon&quot;:&quot;9.190&quot;}">Milan, Italy</option>
+                    <option value="{&quot;lat&quot;:&quot;48.135&quot;,&quot;lon&quot;:&quot;11.582&quot;}">Munich, Germany</option>
+                    <option value="{&quot;lat&quot;:&quot;40.851&quot;,&quot;lon&quot;:&quot;14.268&quot;}">Naples, Italy</option>
+                    <option value="{&quot;lat&quot;:&quot;43.034&quot;,&quot;lon&quot;:&quot;-2.417&quot;}">Oñati, Basque Country, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;59.913&quot;,&quot;lon&quot;:&quot;10.752&quot;}">Oslo, Norway</option>
+                    <option value="{&quot;lat&quot;:&quot;48.856&quot;,&quot;lon&quot;:&quot;2.352&quot;}">Paris, France</option>
+                    <option value="{&quot;lat&quot;:&quot;50.075&quot;,&quot;lon&quot;:&quot;14.437&quot;}">Prague, Czech Republic</option>
+                    <option value="{&quot;lat&quot;:&quot;64.146&quot;,&quot;lon&quot;:&quot;-21.942&quot;}">Reykjavík, Iceland</option>
+                    <option value="{&quot;lat&quot;:&quot;56.879&quot;,&quot;lon&quot;:&quot;24.603&quot;}">Riga, Latvia</option>
+                    <option value="{&quot;lat&quot;:&quot;41.902&quot;,&quot;lon&quot;:&quot;12.496&quot;}">Rome, Italy</option>
+                    <option value="{&quot;lat&quot;:&quot;39.453&quot;,&quot;lon&quot;:&quot;-31.127&quot;}">Santa Cruz das Flores, Azores, Portugual</option>
+                    <option value="{&quot;lat&quot;:&quot;28.463&quot;,&quot;lon&quot;:&quot;-16.251&quot;}">Santa Cruz de Tenerife, Tenerife, Spain</option>
+                    <option value="{&quot;lat&quot;:&quot;57.273&quot;,&quot;lon&quot;:&quot;-6.215&quot;}">Skye, Scotland, UK</option>
+                    <option value="{&quot;lat&quot;:&quot;42.697&quot;,&quot;lon&quot;:&quot;23.321&quot;}">Sofia, Bulgaria</option>
+                    <option value="{&quot;lat&quot;:&quot;59.329&quot;,&quot;lon&quot;:&quot;18.068&quot;}">Stockholm, Sweden</option>
+                    <option value="{&quot;lat&quot;:&quot;59.437&quot;,&quot;lon&quot;:&quot;24.753&quot;}">Tallinn, Estonia</option>
+                    <option value="{&quot;lat&quot;:&quot;18.208&quot;,&quot;lon&quot;:&quot;16.373&quot;}">Vienna, Austria</option>
+                    <option value="{&quot;lat&quot;:&quot;52.229&quot;,&quot;lon&quot;:&quot;21.012&quot;}">Warsaw, Poland</option>
+                    <option value="{&quot;lat&quot;:&quot;53.961&quot;,&quot;lon&quot;:&quot;-1.07&quot;}">York, England, UK</option>
+                    <option value="{&quot;lat&quot;:&quot;47.376&quot;,&quot;lon&quot;:&quot;8.541&quot;}">Zurich, Switzerland</option>
+                </select>
+            </div>
+        </div><br>
+        <hr class="text-light mb-5">
+        <div class="container weather-card">
+                <div class="row justify-content-md-center text-light">
+                
+                    <!-- Card 1 -->
+                    <div class="col-6 col-md-3 mt-4 d-none" id="entire-card1">
+                    <div class="card bg-dark text-light mr-3" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading1"></h5>
+                        <p class="card-text text-center" id="card-weather1"></p>
+                        <p class="card-text text-center fs-2" id="card-icon1"></p>
+                        <p class="card-text text-center" id="card-temp1"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-6 col-md-3 mt-4 d-none" id="entire-card2">
+                    <div class="card bg-dark text-light" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading2"></h5>
+                        <p class="card-text text-center" id="card-weather2"></p>
+                        <p class="card-text text-center fs-2" id="card-icon2"></p>
+                        <p class="card-text text-center" id="card-temp2"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-6 col-md-3 mt-4 d-none" id="entire-card3">
+                    <div class="card bg-dark text-light" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading3"></h5>
+                        <p class="card-text text-center" id="card-weather3"></p>
+                        <p class="card-text text-center fs-2" id="card-icon3"></p>
+                        <p class="card-text text-center" id="card-temp3"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-6 col-md-3 mt-4 d-none" id="entire-card4">
+                    <div class="card bg-dark text-light" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading4"></h5>
+                        <p class="card-text text-center" id="card-weather4"></p>
+                        <p class="card-text text-center fs-2" id="card-icon4"></p>
+                        <p class="card-text text-center" id="card-temp4"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-6 col-md-3 mt-4 d-none" id="entire-card5">
+                    <div class="card bg-dark text-light" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading5"></h5>
+                        <p class="card-text text-center" id="card-weather5"></p>
+                        <p class="card-text text-center fs-2" id="card-icon5"></p>
+                        <p class="card-text text-center" id="card-temp5"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-6 col-md-3 mt-4 d-none" id="entire-card6">
+                    <div class="card bg-dark text-light" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading6"></h5>
+                        <p class="card-text text-center" id="card-weather6"></p>
+                    <p class="card-text text-center fs-2" id="card-icon6"></p>
+                        <p class="card-text text-center" id="card-temp6"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col-12 col-md-3 mt-4 d-none" id="entire-card7">
+                    <div class="card bg-dark text-light" style="width: 12.5rem;">
+                        <div class="card-body">
+                        <h5 class="card-title" id="card-heading7"></h5>
+                        <p class="card-text text-center" id="card-weather7"></p>
+                        <p class="card-text text-center fs-2" id="card-icon7"></p>
+                        <p class="card-text text-center" id="card-temp7"></p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div><br><br><br>
+        <div class="footer mt-5">
+            <footer>
+            <div>Have a great Day</div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
