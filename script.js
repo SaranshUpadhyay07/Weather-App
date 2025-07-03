@@ -29,7 +29,7 @@ document.getElementById("citySelected").addEventListener("change", function () {
       const coords = JSON.parse(decoded);
 
       // Example: Build a weather API URL or map URL
-    const apiUrl = `http://www.7timer.info/bin/api.pl?lon=${coords.lon}&lat=${coords.lat}&product=civillight&output=json`;
+    const apiUrl = `https://www.7timer.info/bin/api.pl?lon=${coords.lon}&lat=${coords.lat}&product=civillight&output=json`;
       fetch(apiUrl)
         .then(res => res.json())
         .then(data => {
